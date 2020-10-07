@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f7f8fc;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: 70px;
+  border-top: 5px solid #10182f;
+  background-color: #fff;
+  box-shadow: 0 10px 76px rgba(#001d93, 0.1);
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    .logo {
+      color: #000;
+      font-size: 25px;
+      font-weight: 900;
+    }
+    .footer-menu {
+      display: flex;
+      nav {
+        min-width: 180px;
+        margin-right: 15px;
+        h5 {
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 24px;
+          text-transform: uppercase;
+        }
+        &:not(:last-child) {
+          margin-right: 90px;
+          display: flex;
+          flex-direction: column;
+        }
+        ul {
+          li {
+            a {
+              display: inline-block;
+              color: #545d7a;
+              line-height: 40px;
+              position: relative;
+              &::before {
+                content: '';
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: #545d7a;
+                width: 0;
+                transition: 300ms all;
+              }
+              &:hover {
+                color: #222c46;
+                &::before {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    .copyright {
+      font-size: 14px;
+    }
+    .footer-menu {
+      ul {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        li {
+          margin-right: 65px;
+          a {
+            color: #545d7a;
+          }
+        }
+      }
+    }
+    .footer-social {
+      display: flex;
+
+      li {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          i {
+            font-size: 20px;
+          }
+          &:hover {
+            i {
+              opacity: 0.5;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

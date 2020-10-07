@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>LinkedIn redesigned</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="logo" href="www.linkedin.com">
+          <img src="images/linkedin-logo.png" alt="" />
+        </a>
+        <div class="search">
+          <!-- <img src="images/icons/search.svg" alt="" /> -->
+          <i class="fa fa-search"></i>
+          <input type="text" class="search__Input" placeholder="Search..." />
+        </div>
+        <nav>
+          <ul>
+            <li class="active">
+              <a href="#"
+                ><i class="fas fa-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-user-friends"></i>
+                <span>Users</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-briefcase"></i>
+                <span>Works</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="far fa-comment-alt"></i>
+                <span>Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="far fa-bell"></i>
+                <span>Notifications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-th-large"></i>
+                <span>Applications</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user_info">
+          <a href="#">
+            <span class="detail">
+              <span class="name">Cameron Williamson</span>
+              <span class="status online">Online</span>
+            </span>
+            <img class="avatar" src="images/avatar.png" alt="" />
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="sidebar">
+          <div class="widget widget_stats">
+            <div class="stat_user">
+              <div class="cover"></div>
+              <div class="avatar">
+                <img src="images/profile-p.png" alt="" />
+              </div>
+              <div class="name">Cameron Williamson</div>
+              <div class="job-title">Business Analyst</div>
+            </div>
+            <ul>
+              <li>
+                <span class="key">Who viewed your profile</span>
+                <span class="value">90</span>
+              </li>
+              <li>
+                <span class="key">Views of your post</span>
+                <span class="value">627</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="widget widget_hashtag">
+            <ul>
+              <h5>
+                Newest
+                <div class="dropdown">
+                  <a href="#"> Active <i class="fa fa-chevron-down"></i> </a>
+                </div>
+              </h5>
+              <div class="bottom-line"></div>
+              <li>
+                <a href="#">
+                  <i class="fas fa-hashtag"></i>
+                  money</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-hashtag"></i>
+                  economy
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-hashtag"></i>
+                  markets
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-hashtag"></i>
+                  futurism
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <h5>Group</h5>
+              <div class="bottom-line"></div>
+              <li>
+                <a href="#">
+                  <i class="fas fa-user-friends"></i>
+                  Android Developers Group
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-user-friends"></i>
+                  User Interface
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-user-friends"></i>
+                  User Experience
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-user-friends"></i>
+                  Design Thinking
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="add_event widget">
+            Add Event
+            <a href="#">
+              <i class="fas fa-plus"></i>
+            </a>
+          </div>
+
+          <div class="find_more widget">
+            <a href="#">Find More</a>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="create_post">
+            <textarea
+              name="create-post"
+              placeholder="Create post..."
+            ></textarea>
+            <div class="bottom-line"></div>
+            <ul class="actions">
+              <li>
+                <label>
+                  <input type="file" name="photo" accept="image/*" />
+                  <i class="fas fa-camera"></i> Photo
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="file" name="video" accept="video/*" />
+                  <i class="fas fa-video"></i> Video
+                </label>
+              </li>
+              <li>
+                <a href="#"> <i class="fas fa-calendar"></i> Event </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-edit" aria-hidden="true"></i>
+                  Write Articles
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter-posts">
+            <label>Filter post by: </label>
+            <div class="selectbox">
+              <select name="filter">
+                <option value="popular">Popular</option>
+              </select>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post_header">
+              <a href="#" class="post_author">
+                <img src="images/avatar3.png" alt="" />
+                <div class="detail">
+                  <span class="name">Brooklyn Simmons</span>
+                  <span class="job-title">UI/UX Designer at Freelance</span>
+                  <small>7 hour ago</small>
+                </div>
+              </a>
+              <a href="#">
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
+            </div>
+            <div class="bottom-line"></div>
+
+            <div class="post_content">
+              <p>
+                He said, Design is not just what it looks and feels like. Design
+                is how it work
+              </p>
+              <p>
+                <a href="#"> #stevejobs </a>
+                <a href="#"> #design </a>
+                <a href="#"> apple </a>
+              </p>
+              <img src="images/Steve-Jobs-Quotes-1 1.png" alt="" />
+            </div>
+
+            <div class="post_interactions">
+              <div class="likes">
+                <i class="far fa-heart"></i>
+                <i class="far fa-thumbs-up"></i>
+                172&nbsp;&nbsp; •
+              </div>
+              <div class="comments">10 comment</div>
+            </div>
+            <div class="bottom-line"></div>
+
+            <div class="post_actions">
+              <a href="#"> <i class="fas fa-thumbs-up"></i> Like </a>
+              <a href="#"> <i class="far fa-comment-alt"></i> Comment </a>
+              <a href="#"> <i class="fas fa-share-alt"></i> Share </a>
+              <a href="#"> <i class="fas fa-paper-plane"></i> Send </a>
+            </div>
+
+            <div class="post_comment">
+              <img src="images/Ellipse 4.png" alt="" />
+              <div class="textarea">
+                <textarea name="comment" placeholder="Write comment"></textarea>
+                <label>
+                  <input type="file" name="photo" accept="image/*" />
+                  <i class="fas fa-camera"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post_header">
+              <a href="#" class="post_author">
+                <img src="images/avatar3.png" alt="" />
+                <div class="detail">
+                  <span class="name">Brooklyn Simmons</span>
+                  <span class="job-title">UI/UX Designer at Freelance</span>
+                  <small>7 hour ago</small>
+                </div>
+              </a>
+              <a href="#">
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
+            </div>
+            <div class="bottom-line"></div>
+
+            <div class="post_content">
+              <p>
+                He said, Design is not just what it looks and feels like. Design
+                is how it work
+              </p>
+              <p>
+                <a href="#"> #stevejobs </a>
+                <a href="#"> #design </a>
+                <a href="#"> apple </a>
+              </p>
+              <img src="images/Steve-Jobs-Quotes-1 1.png" alt="" />
+            </div>
+
+            <div class="post_interactions">
+              <div class="likes">
+                <i class="far fa-heart"></i>
+                <i class="far fa-thumbs-up"></i>
+                172&nbsp;&nbsp; •
+              </div>
+              <div class="comments">10 comment</div>
+            </div>
+            <div class="bottom-line"></div>
+
+            <div class="post_actions">
+              <a href="#"> <i class="fas fa-thumbs-up"></i> Like </a>
+              <a href="#"> <i class="far fa-comment-alt"></i> Comment </a>
+              <a href="#"> <i class="fas fa-share-alt"></i> Share </a>
+              <a href="#"> <i class="fas fa-paper-plane"></i> Send </a>
+            </div>
+
+            <div class="post_comment">
+              <img src="images/Ellipse 4.png" alt="" />
+              <div class="textarea">
+                <textarea name="comment" placeholder="Write comment"></textarea>
+                <label>
+                  <input type="file" name="photo" accept="image/*" />
+                  <i class="fas fa-camera"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="post_header">
+              <a href="#" class="post_author">
+                <img src="images/avatar3.png" alt="" />
+                <div class="detail">
+                  <span class="name">Brooklyn Simmons</span>
+                  <span class="job-title">UI/UX Designer at Freelance</span>
+                  <small>7 hour ago</small>
+                </div>
+              </a>
+              <a href="#">
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
+            </div>
+            <div class="bottom-line"></div>
+
+            <div class="post_content">
+              <p>
+                He said, Design is not just what it looks and feels like. Design
+                is how it work
+              </p>
+              <p>
+                <a href="#"> #stevejobs </a>
+                <a href="#"> #design </a>
+                <a href="#"> apple </a>
+              </p>
+              <img src="images/Steve-Jobs-Quotes-1 1.png" alt="" />
+            </div>
+
+            <div class="post_interactions">
+              <div class="likes">
+                <i class="far fa-heart"></i>
+                <i class="far fa-thumbs-up"></i>
+                172&nbsp;&nbsp; •
+              </div>
+              <div class="comments">10 comment</div>
+            </div>
+            <div class="bottom-line"></div>
+
+            <div class="post_actions">
+              <a href="#"> <i class="fas fa-thumbs-up"></i> Like </a>
+              <a href="#"> <i class="far fa-comment-alt"></i> Comment </a>
+              <a href="#"> <i class="fas fa-share-alt"></i> Share </a>
+              <a href="#"> <i class="fas fa-paper-plane"></i> Send </a>
+            </div>
+
+            <div class="post_comment">
+              <img src="images/Ellipse 4.png" alt="" />
+              <div class="textarea">
+                <textarea name="comment" placeholder="Write comment"></textarea>
+                <label>
+                  <input type="file" name="photo" accept="image/*" />
+                  <i class="fas fa-camera"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="recommendations widget">
+            <h5>Add to Your Feeds</h5>
+            <div class="bottom-line"></div>
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="image">
+                    <img src="images/techin-asia.png" alt="" />
+                  </span>
+                  <div class="detail">
+                    <span class="name">Techin Asia Indonesia</span>
+                    <span class="field">Corporate • Online Media</span>
+                  </div>
+                </a>
+                <a href="#" class="add-to-feed">
+                  <i class="fas fa-plus"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="image">
+                    <img src="images/figma-logo.png" alt="" />
+                  </span>
+                  <div class="detail">
+                    <span class="name">Figma Indonesia</span>
+                    <span class="field">Design Platform</span>
+                  </div>
+                  <a href="#" class="add-to-feed">
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="image">
+                    <img src="images/uplabs.png" alt="" />
+                  </span>
+                  <div class="detail">
+                    <span class="name">Uplabas</span>
+                    <span class="field">Design Marketpalce</span>
+                  </div>
+                  <a href="#" class="add-to-feed">
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </a>
+              </li>
+            </ul>
+            <a class="see-all-recommendations" href="#"
+              >See All Recommendations</a
+            >
+          </div>
+
+          <div class="advertisement widget">
+            <h5>
+              Advertisement
+              <i class="fas fa-ellipsis-h"></i>
+            </h5>
+            <small>Get the latest new and job vacancies</small>
+            <div class="bottom-line"></div>
+            <div class="get_updates">
+              <div class="avatars">
+                <a href="#">
+                  <img src="images/profile-p.png" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/avatar2.png" alt="" />
+                </a>
+              </div>
+              <p>
+                Cameron, Get update from
+                <span>Interaction Design Foundations</span>
+              </p>
+              <a class="visit_now" href="#">Visit Now</a>
+            </div>
+          </div>
+          <footer class="footer">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Accesibility</a></li>
+              <li><a href="#">Privacy & Terms</a></li>
+              <li><a href="#">Ad Choices</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Business Services</a></li>
+              <li><a href="#">Get the LinkedIn app</a></li>
+              <li><a href="#">More</a></li>
+            </ul>
+            <div class="bottom-line"></div>
+            <div>
+              <small>LinkedIn Corporation © 2020</small>
+              <img src="images/linkedin-logo.png" alt="" />
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <div class="message_box">
+      <div class="message_header">
+        <div class="img online">
+          <img src="images/profile-p.png" alt="" />
+        </div>
+        Messaging
+        <div class="actions">
+          <a href="#">
+            <i class="far fa-edit"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-ellipsis-h"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Search-filter Components</title>
+  </head>
+  <body>
+    <div style="margin: 25px">
+      <div class="search_component">
+        <form>
+          <div class="search_icon">
+            <i class="fa fa-search"></i>
+          </div>
+          <input type="text" placeholder="Start typing to search" />
+        </form>
+        <ul>
+          <h5>Popular Searches</h5>
+          <li>Air Transport</li>
+          <li>Aviation</li>
+          <li class="active">Mekaniske Verksted</li>
+          <li>Port authority</li>
+          <li>Sporvei</li>
+          <li>Bergens Kreditbank</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin: 25px">
+      <div class="search_filter_component">
+        <form>
+          <div class="input">
+            <div class="search_icon">
+              <i class="fa fa-search"></i>
+            </div>
+            <input type="text" placeholder="Start typing to search" />
+          </div>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" checked name="type" value="projects" />
+                <span class="text">Projects</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="type" value="images" />
+                <span class="text">Images</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="type" value="people" />
+                <span class="text">People</span>
+              </label>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <div style="margin: 25px">
+      <div class="filter_component">
+        <form>
+          <ul>
+            <li>
+              <div class="key">Country</div>
+              <div class="value">
+                <select name="country">
+                  <option value="norway">Norway</option>
+                  <option value="turkey">Turkey</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="key">City</div>
+              <div class="value">
+                <select name="city">
+                  <option value="Bergen">Bergen</option>
+                </select>
+              </div>
+            </li>
+            <li class="filter_button">
+              <a href="#">Cancel</a>
+              <button type="submit">Apply Filters</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

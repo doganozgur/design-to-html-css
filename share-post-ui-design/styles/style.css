@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background: url("../bg.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  padding: 50px;
+}
+
+.component--share {
+  margin: auto;
+  background-color: #fff;
+  padding: 55px 78px;
+  border-radius: 15px;
+  width: 808px;
+  z-index: 10;
+}
+
+.component--share h4 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.component--share ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.component--share ul li {
+  border: 1.34px solid #ebebf2;
+  width: 82px;
+  height: 82px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.component--share ul li i {
+  font-size: 30px;
+}
+
+.component--share h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.component--share .link {
+  position: relative;
+  width: 100%;
+}
+
+.component--share .link input {
+  border: 1px solid #ebebf2;
+  border-radius: 5px;
+  height: 57px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.component--share .link a {
+  position: absolute;
+  right: 20px;
+  -webkit-transform: translateY(86%);
+          transform: translateY(86%);
+}
+/*# sourceMappingURL=style.css.map */
