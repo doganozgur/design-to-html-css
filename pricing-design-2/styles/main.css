@@ -48,10 +48,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .component--pricing-list .pricing-list li {
   width: 265px;
+  margin-bottom: 40px;
 }
 
 .component--pricing-list .pricing-list li:not(:last-child) {
@@ -150,5 +154,26 @@ body {
 .component--pricing-list .view-more a:hover {
   border-color: #8080b9;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .component--pricing-list .pricing-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .component--pricing-list .pricing-list li {
+    margin-bottom: 40px;
+  }
+  .component--pricing-list .view-more {
+    margin-top: 32px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

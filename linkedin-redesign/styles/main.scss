@@ -752,3 +752,42 @@ main {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  main {
+    .container {
+      .sidebar:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .container {
+      margin-right: 5px;
+      margin-left: 5px;
+      .user_info {
+        display: none;
+      }
+      ul {
+        li {
+          a {
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .container {
+      .sidebar:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+  .message_box {
+    right: 10px;
+  }
+}

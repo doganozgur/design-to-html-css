@@ -20,6 +20,7 @@ body {
   color: #fff;
   padding: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -31,12 +32,20 @@ h5 {
   margin-bottom: 20px;
 }
 
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // align-items: center;
+}
+
 .component {
   background-color: #1b1b30;
   border-radius: 10px;
 
   &-help {
-    width: 855px;
+    max-width: 855px;
     padding: 40px 50px;
     h1 {
       font-size: 36px;
@@ -80,9 +89,10 @@ h5 {
     }
   }
   &-sidebar {
-    margin-top: 77px;
     width: 307px;
     padding: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
     ul {
       li {
         margin-bottom: 20px;
@@ -121,11 +131,11 @@ h5 {
     }
   }
   &-support {
-    margin-top: 77px;
+    margin-top: 50px;
     > div {
       display: flex;
       justify-content: space-between;
-      width: 735px;
+      max-width: 735px;
       padding: 30px;
       background-color: #1b1b30;
       margin-bottom: 10px;
@@ -158,6 +168,24 @@ h5 {
           border-radius: 17.5px;
           background-color: #262034;
           color: #ff7e7e;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .component {
+    &-help {
+      h1 {
+        font-size: 25px;
+      }
+      form {
+        .search {
+          input {
+            padding-right: 20px;
+            padding-left: 50px;
+          }
         }
       }
     }

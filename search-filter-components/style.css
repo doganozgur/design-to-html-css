@@ -17,6 +17,7 @@ body {
   background-color: #303236;
   color: #c4c8ca;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -215,4 +216,20 @@ a {
   border-radius: 50px;
   color: #fff;
   outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .filter_component {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 420px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .filter_component .filter_button {
+    padding-top: 15px;
+  }
+  .filter_component li:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }

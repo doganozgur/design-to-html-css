@@ -13,6 +13,11 @@
   text-decoration: none;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 16px;
@@ -182,5 +187,17 @@ body {
   background-color: var(--dark-color);
   color: var(--light-color);
   border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .cookie-banner.style3 {
+    width: 450px;
+  }
+  .cookie-banner.style3 .icon {
+    display: none;
+  }
+  .cookie-banner.style3 p {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

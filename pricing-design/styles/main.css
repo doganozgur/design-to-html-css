@@ -31,11 +31,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 55px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .component--prices .title h2 {
   font-size: 42px;
   font-weight: 900;
+  margin-bottom: 20px;
 }
 
 .component--prices label {
@@ -78,7 +81,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .component--prices .packages .package {
@@ -88,7 +100,8 @@ body {
   border-radius: 5px;
   padding: 45px;
   background-color: #fff;
-  margin: 0 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .component--prices .packages .package h5 {
@@ -144,5 +157,30 @@ body {
 .component--prices .packages .package .price-info .btn-dark:hover {
   background-color: #fff;
   color: #171922;
+}
+
+@media screen and (max-width: 768px) {
+  .component--prices {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .component--prices .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .component--prices .title h2 {
+    font-size: 32px;
+    margin-right: 40px;
+  }
+  .component--prices .packages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .component--prices .packages .package {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

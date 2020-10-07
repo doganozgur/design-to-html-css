@@ -8,13 +8,17 @@
   list-style: none;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 16px;
   font-weight: bold;
   background: url("../bg.png") no-repeat center center;
   background-size: cover;
-  height: 100vh;
   padding: 50px;
 }
 
@@ -23,7 +27,7 @@ body {
   background-color: #fff;
   padding: 55px 78px;
   border-radius: 15px;
-  width: 808px;
+  max-width: 808px;
   z-index: 10;
 }
 
@@ -86,5 +90,30 @@ body {
   right: 20px;
   -webkit-transform: translateY(86%);
           transform: translateY(86%);
+}
+
+@media screen and (max-width: 900px) {
+  .component {
+    width: 500px;
+  }
+  .component--share {
+    padding: 30px;
+  }
+  .component--share ul {
+    margin-bottom: 30px;
+  }
+  .component--share ul li {
+    width: 40px;
+    height: 40px;
+  }
+  .component--share ul li i {
+    font-size: 20px;
+  }
+  .component--share .link a {
+    right: 4px;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

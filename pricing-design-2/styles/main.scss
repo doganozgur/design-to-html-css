@@ -41,8 +41,11 @@ body {
   }
   .pricing-list {
     display: flex;
+    justify-content: center;
     li {
       width: 265px;
+      margin-bottom: 40px;
+
       &:not(:last-child) {
         margin-right: 20px;
       }
@@ -123,6 +126,22 @@ body {
         border-color: #8080b9;
         color: #fff;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .component--pricing-list {
+    .pricing-list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin-bottom: 40px;
+      }
+    }
+    .view-more {
+      margin-top: 32px;
     }
   }
 }
