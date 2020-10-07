@@ -170,11 +170,11 @@ body {
 }
 
 .footer .footer-bottom .footer-social li a i {
-  font-size: 20px;
+  font-size: 23px;
+  color: #545d7a;
 }
 
 .footer .footer-bottom .footer-social li a:hover i {
   opacity: 0.5;
-  font-size: 25px;
 }
 /*# sourceMappingURL=main.css.map */
