@@ -1,7 +1,6 @@
 const projects = [
   'cookie-banners-design',
   'footer-design',
-  'linkedin-redesign',
   'pricing-design',
   'pricing-design-2',
   'search-filter-components',

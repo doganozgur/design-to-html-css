@@ -186,10 +186,10 @@ h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 735px;
   padding: 30px;
   background-color: #1b1b30;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .component-support > div h5 {
@@ -200,29 +200,26 @@ h5 {
   color: #bbbbd7;
   line-height: 20px;
   padding-right: 30px;
+  max-width: 500px;
+  opacity: 0.7;
 }
 
-.component-support > div .btn-payment {
+.component-support > div .btn {
   font-size: 16px;
   padding: 8px 19px;
   border-radius: 17.5px;
   background-color: #262035;
+}
+
+.component-support > div .btn-payment {
   color: #ff7e9c;
 }
 
 .component-support > div .btn-privacy {
-  font-size: 16px;
-  padding: 8px 19px;
-  border-radius: 17.5px;
-  background-color: #20213a;
   color: #7ea1ff;
 }
 
 .component-support > div .btn-api {
-  font-size: 16px;
-  padding: 8px 19px;
-  border-radius: 17.5px;
-  background-color: #262034;
   color: #ff7e7e;
 }
 
@@ -231,8 +228,31 @@ h5 {
     font-size: 25px;
   }
   .component-help form .search input {
-    padding-right: 20px;
     padding-left: 50px;
+  }
+  .component-sidebar {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .component-help {
+    padding: 25px 35px;
+  }
+  .component-help h1 {
+    font-size: 17px;
+  }
+  .component-help form .search input {
+    height: 50px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  .component-support > div .btn {
+    display: none;
+  }
+  .component-support > div p {
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

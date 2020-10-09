@@ -194,3 +194,26 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 520px) {
+  .footer {
+    .footer-top {
+      margin-bottom: 20px;
+      .footer-menu {
+        flex-direction: column;
+        nav {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .footer-bottom {
+      .footer-menu {
+        ul {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

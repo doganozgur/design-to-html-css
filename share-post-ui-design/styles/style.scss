@@ -104,3 +104,22 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .component {
+    &--share {
+      h4 {
+        font-size: 18px;
+      }
+      ul {
+        li {
+          width: 25px;
+          height: 25px;
+          i {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

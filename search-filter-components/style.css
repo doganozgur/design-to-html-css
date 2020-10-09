@@ -20,6 +20,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 a {
@@ -33,7 +34,7 @@ a {
   border-radius: 10px;
   padding: 40px 45px;
   box-shadow: 0 15px 25px -20px #202125;
-  width: 377px;
+  max-width: 350px;
 }
 
 .search_component form {
@@ -100,11 +101,11 @@ a {
   background-color: #3d3f43;
   border-radius: 10px;
   box-shadow: 0 15px 25px -20px #202125;
-  max-width: 650px;
+  max-width: 550px;
 }
 
 .search_filter_component form {
-  height: 68px;
+  min-height: 68px;
   padding: 14px;
   display: flex;
 }
@@ -159,9 +160,9 @@ a {
 .filter_component {
   background-color: #3d3f43;
   border-radius: 10px;
-  padding: 40px 45px;
+  padding: 30px;
   box-shadow: 0 15px 25px -20px #202125;
-  width: 550px;
+  max-width: 450px;
 }
 
 .filter_component ul li {
@@ -178,7 +179,7 @@ a {
 }
 
 .filter_component .value {
-  flex: 1;
+  width: 100%;
 }
 
 .filter_component .value select {
@@ -190,11 +191,12 @@ a {
   color: #fff;
   padding: 0 1rem;
   outline: none;
+  margin-left: auto;
 
   cursor: pointer;
   appearance: none;
   background: #303236 url('https://svgshare.com/i/PkM.svg') no-repeat
-    calc(100% - 30px) center;
+    calc(100% - 10px) center;
 }
 
 .filter_component .filter_button {
@@ -204,11 +206,6 @@ a {
   justify-content: space-between;
   font-size: 1.1rem;
 }
-
-.filter_component .filter_button a {
-  color: #8c8e90;
-}
-
 .filter_component .filter_button button {
   border: none;
   background-color: #289ebf;
@@ -216,20 +213,62 @@ a {
   border-radius: 50px;
   color: #fff;
   outline: none;
+  margin-left: 1rem;
+}
+
+.filter_component .filter_button a {
+  color: #8c8e90;
 }
 
 @media screen and (max-width: 768px) {
   .filter_component {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 420px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding: 30px;
   }
-  .filter_component .filter_button {
-    padding-top: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .search_component {
+    padding: 20px;
+  }
+
+  .search_filter_component form {
+    flex-direction: column;
+  }
+
+  .search_filter_component form .input {
+    margin-bottom: 10px;
+  }
+
+  .search_filter_component ul label .text {
+    padding: 0 15px;
+    font-size: 13px;
+  }
+  .filter_component {
+    padding: 1rem 2rem;
+  }
+
+  .filter_component form {
+    text-align: center;
+  }
+
+  .filter_component ul li {
+    flex-direction: column;
+    align-items: left;
+  }
+  .filter_component ul li .key {
+    margin-bottom: 0.5rem;
   }
   .filter_component li:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  .filter_component .filter_button {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .filter_component .filter_button button {
+    margin-top: 0.5rem;
+    margin-left: 0;
   }
 }

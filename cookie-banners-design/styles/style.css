@@ -13,11 +13,6 @@
   text-decoration: none;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 16px;
@@ -25,16 +20,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
 }
 
 .cookie-banner {
@@ -45,8 +39,8 @@ body {
 }
 
 .cookie-banner.style1 {
-  width: 410px;
-  height: 196px;
+  max-width: 410px;
+  min-height: 196px;
   background-color: var(--dark-color);
   color: #fff;
   padding: 35px 35px 25px;
@@ -73,7 +67,6 @@ body {
 }
 
 .cookie-banner.style1 .actions .btn {
-  height: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,8 +106,8 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background-color: var(--light-color);
-  width: 410px;
-  height: 304px;
+  max-width: 410px;
+  min-height: 304px;
   padding: 40px 40px 35px;
 }
 
@@ -133,7 +126,7 @@ body {
 }
 
 .cookie-banner.style2 p {
-  width: 330px;
+  max-width: 330px;
   line-height: 25px;
   color: var(--dark-color);
   text-align: center;
@@ -154,9 +147,9 @@ body {
 }
 
 .cookie-banner.style3 {
-  width: 731px;
-  height: 145px;
-  padding: 35px 35px 35px 45px;
+  max-width: 731px;
+  min-height: 145px;
+  padding: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +163,7 @@ body {
 }
 
 .cookie-banner.style3 p {
-  width: 330px;
+  max-width: 330px;
   margin-left: 45px;
   line-height: 25px;
   color: var(--dark-color);
@@ -182,7 +175,6 @@ body {
 }
 
 .cookie-banner.style3 .btn {
-  margin-left: auto;
   padding: 15px 35px;
   background-color: var(--dark-color);
   color: var(--light-color);
@@ -190,14 +182,32 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .cookie-banner.style3 {
-    width: 450px;
+  .cookie-banner {
+    margin: 30px;
   }
-  .cookie-banner.style3 .icon {
-    display: none;
+  .cookie-banner.style3 {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .cookie-banner.style3 p {
     margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cookie-banner.style1 {
+    padding: 30px;
+  }
+  .cookie-banner.style2 {
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

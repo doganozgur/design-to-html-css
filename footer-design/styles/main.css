@@ -227,4 +227,23 @@ body {
     margin-bottom: 10px;
   }
 }
+
+@media screen and (max-width: 520px) {
+  .footer .footer-top {
+    margin-bottom: 20px;
+  }
+  .footer .footer-top .footer-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-top .footer-menu nav {
+    margin-bottom: 15px;
+  }
+  .footer .footer-bottom .footer-menu ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

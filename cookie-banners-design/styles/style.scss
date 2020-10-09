@@ -15,7 +15,7 @@
 
 html,
 body {
-  height: 100%;
+  // height: 100%;
 }
 
 body {
@@ -23,9 +23,10 @@ body {
   font-size: 16px;
   background-color: var(--light-color);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
 }
 
 .cookie-banner {
@@ -33,8 +34,8 @@ body {
   box-shadow: 0 15px 45px -12px rgba(#001d93, 0.15);
   border-radius: 5px;
   &.style1 {
-    width: 410px;
-    height: 196px;
+    max-width: 410px;
+    min-height: 196px;
     background-color: var(--dark-color);
     color: #fff;
     padding: 35px 35px 25px;
@@ -53,7 +54,7 @@ body {
       justify-content: flex-end;
       margin-top: 25px;
       .btn {
-        height: 36px;
+        // height: 36px;
         display: flex;
         align-items: center;
         font-size: 14px;
@@ -82,8 +83,8 @@ body {
     justify-content: flex-start;
     background-color: var(--light-color);
 
-    width: 410px;
-    height: 304px;
+    max-width: 410px;
+    min-height: 304px;
     padding: 40px 40px 35px;
     .icon {
       margin-bottom: 25px;
@@ -97,7 +98,7 @@ body {
       --blue-color: #fff;
     }
     p {
-      width: 330px;
+      max-width: 330px;
       line-height: 25px;
       color: var(--dark-color);
       text-align: center;
@@ -117,9 +118,9 @@ body {
   }
 
   &.style3 {
-    width: 731px;
-    height: 145px;
-    padding: 35px 35px 35px 45px;
+    max-width: 731px;
+    min-height: 145px;
+    padding: 35px;
     display: flex;
     align-items: center;
     .icon {
@@ -128,7 +129,7 @@ body {
       }
     }
     p {
-      width: 330px;
+      max-width: 330px;
       margin-left: 45px;
       line-height: 25px;
       color: var(--dark-color);
@@ -138,7 +139,6 @@ body {
       }
     }
     .btn {
-      margin-left: auto;
       padding: 15px 35px;
       background-color: var(--dark-color);
       color: var(--light-color);
@@ -149,15 +149,27 @@ body {
 
 @media screen and (max-width: 768px) {
   .cookie-banner {
+    margin: 30px;
     &.style3 {
-      width: 450px;
-
-      .icon {
-        display: none;
-      }
+      padding: 20px;
+      flex-direction: column;
+      justify-content: center;
       p {
         margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cookie-banner {
+    &.style1 {
+      padding: 30px;
+    }
+    &.style2 {
+      padding: 20px;
     }
   }
 }

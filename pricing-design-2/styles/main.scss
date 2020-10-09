@@ -44,10 +44,10 @@ body {
     justify-content: center;
     li {
       width: 265px;
-      margin-bottom: 40px;
 
       &:not(:last-child) {
         margin-right: 20px;
+        margin-bottom: 40px;
       }
 
       a {
@@ -115,7 +115,7 @@ body {
   }
 
   .view-more {
-    margin-top: 64px;
+    margin-top: 2rem;
     a {
       padding: 20px 45px;
       border: 1px solid #1f1f35;
@@ -132,16 +132,29 @@ body {
 
 @media screen and (max-width: 768px) {
   .component--pricing-list {
+    margin-bottom: 5rem;
+    header {
+      margin: 1rem 1rem 2rem;
+      h2 {
+        font-size: 23px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
     .pricing-list {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       li {
         margin-bottom: 40px;
+        &:not(:last-child) {
+          margin-right: 0;
+        }
       }
     }
     .view-more {
-      margin-top: 32px;
+      margin-top: 1rem;
     }
   }
 }

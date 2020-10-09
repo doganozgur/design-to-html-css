@@ -55,11 +55,11 @@ body {
 
 .component--pricing-list .pricing-list li {
   width: 265px;
-  margin-bottom: 40px;
 }
 
 .component--pricing-list .pricing-list li:not(:last-child) {
   margin-right: 20px;
+  margin-bottom: 40px;
 }
 
 .component--pricing-list .pricing-list li a {
@@ -139,7 +139,7 @@ body {
 }
 
 .component--pricing-list .view-more {
-  margin-top: 64px;
+  margin-top: 2rem;
 }
 
 .component--pricing-list .view-more a {
@@ -157,6 +157,18 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .component--pricing-list {
+    margin-bottom: 5rem;
+  }
+  .component--pricing-list header {
+    margin: 1rem 1rem 2rem;
+  }
+  .component--pricing-list header h2 {
+    font-size: 23px;
+  }
+  .component--pricing-list header p {
+    font-size: 16px;
+  }
   .component--pricing-list .pricing-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -172,8 +184,11 @@ body {
   .component--pricing-list .pricing-list li {
     margin-bottom: 40px;
   }
+  .component--pricing-list .pricing-list li:not(:last-child) {
+    margin-right: 0;
+  }
   .component--pricing-list .view-more {
-    margin-top: 32px;
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
