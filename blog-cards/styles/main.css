@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.component--blog-cards {
+  max-width: 1100px;
+}
+
+.component--blog-cards ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.component--blog-cards ul li {
+  margin-right: 10px;
+  margin-left: 10px;
+  max-width: 323px;
+}
+
+.component--blog-cards ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 34px 36px -14px #e9ecf9;
+          box-shadow: 0 34px 36px -14px #e9ecf9;
+}
+
+.component--blog-cards ul li a > img {
+  width: 100%;
+}
+
+.component--blog-cards ul li a .inner-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+  padding-bottom: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 264px;
+}
+
+.component--blog-cards ul li a .inner-card .category {
+  margin-bottom: 9px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #fff;
+}
+
+.component--blog-cards ul li a .inner-card .category.technology {
+  background-color: #47bcd4;
+}
+
+.component--blog-cards ul li a .inner-card .category.popular {
+  background-color: #5e76bf;
+}
+
+.component--blog-cards ul li a .inner-card .category.design {
+  background-color: #cd5b9f;
+}
+
+.component--blog-cards ul li a .inner-card .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #10182f;
+  max-width: 273px;
+  margin-bottom: 10px;
+}
+
+.component--blog-cards ul li a .inner-card .info {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #10182f;
+}
+
+.component--blog-cards ul li a .inner-card .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+
+.component--blog-cards ul li a .inner-card .author .author-info {
+  margin-left: 10px;
+}
+
+.component--blog-cards ul li a .inner-card .author .author-info .author-name {
+  font-weight: bold;
+  line-height: 20px;
+  color: #10182f;
+}
+
+.component--blog-cards ul li a .inner-card .author .author-info .time {
+  color: #545d7a;
+}
+
+@media screen and (max-width: 1028px) {
+  .component--blog-cards ul li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

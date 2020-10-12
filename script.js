@@ -1,11 +1,11 @@
 const projects = [
-  'cookie-banners-design',
   'footer-design',
   'pricing-design',
   'pricing-design-2',
   'search-filter-components',
   'share-post-ui-design',
   'support-page-ui-component',
+  'blog-cards'
 ];
 
 const list = document.getElementById('list');

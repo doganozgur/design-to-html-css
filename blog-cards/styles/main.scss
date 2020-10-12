@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #f7f8fc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+  &--blog-cards {
+    max-width: 1100px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        margin-right: 10px;
+        margin-left: 10px;
+        max-width: 323px;
+        a {
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 34px 36px -14px #e9ecf9;
+          > img {
+            width: 100%;
+          }
+          .inner-card {
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            padding-bottom: 30px;
+            flex: 1;
+            min-height: 264px;
+            .category {
+              margin-bottom: 9px;
+              font-size: 12px;
+              text-transform: uppercase;
+              padding: 3px 10px;
+              border-radius: 10px;
+              align-self: flex-start;
+              color: #fff;
+              &.technology {
+                background-color: #47bcd4;
+              }
+              &.popular {
+                background-color: #5e76bf;
+              }
+              &.design {
+                background-color: #cd5b9f;
+              }
+            }
+            .title {
+              font-size: 18px;
+              font-weight: bold;
+              color: #10182f;
+              max-width: 273px;
+              margin-bottom: 10px;
+            }
+            .info {
+              font-size: 16px;
+              margin-bottom: 40px;
+              color: #10182f;
+            }
+            .author {
+              display: flex;
+              align-items: center;
+              margin-top: auto;
+              .author-info {
+                margin-left: 10px;
+                .author-name {
+                  font-weight: bold;
+                  line-height: 20px;
+                  color: #10182f;
+                }
+                .time {
+                  color: #545d7a;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .component {
+    &--blog-cards {
+      ul {
+        li {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
